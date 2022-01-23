@@ -1,0 +1,68 @@
+.lvl1 {
+    
+    position: relative;
+    width: 1280px;
+    height: 720px;
+
+    background: #E3DCDC;
+}
+
+.lvl1-header {
+ 
+    position: absolute;
+    width: 1280px;
+    height: 103px;
+    left: 0px;
+    top: 0px;
+
+    background: #F0D12D;
+
+
+}
+
+.lvl1-lifes {
+    position: absolute;
+    width: 640px;
+    height: 103px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.lvl1-lvl {
+    position: absolute;
+    width: 640px;
+    height: 103px;
+    left: 640px;
+    top: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.board {
+    position: absolute;
+    width: 1280px;
+    height: 617px;
+    left: calc(50% - 1280px/2);
+    top: calc(50% - 617px/2 + 51.5px);
+
+    background: #FFFFFF;
+}
