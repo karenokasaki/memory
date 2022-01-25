@@ -81,23 +81,17 @@ class lvl1 {
                     cartaSelector.classList.toggle("card-no-show")
                     cardFrontID.classList.toggle("card-show")
                     cardFrontID.classList.toggle("card-no-show")
-                    
-                    
-                    }
-                
+                }
+                console.log(cardsToMatch)
                 if (cardsToMatch[0] === cardsToMatch[1]) { //altera o toggle pro cara que eu quero
                     console.log(cardsToMatch)
-                }
-               
-
-                    
- 
-                })
+                } 
+            })
 
 
 
-            }
-        }  
+        }
+    }  
     }
 
    
