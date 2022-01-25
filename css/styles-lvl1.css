@@ -143,12 +143,17 @@
 
 
 .card-show {
-    visibility: hidden;
+    visibility: visible;
+    display: grid;
 }
 .card-no-show {
-    visibility: hidden;
+    display: none;
 }
 
 .back-card {
     display: grid;
+}
+
+.back-card-no-show {
+    
 }

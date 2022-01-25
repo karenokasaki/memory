@@ -61,12 +61,31 @@ class lvl1 {
             console.log(cartaBack)
             let cartaSelector = document.querySelector(cartaBack)
 
+            let cardNumberId = `card${i-1}`
+            let cardFrontID = document.getElementById(cardNumberId)
+            
             cartaSelector.addEventListener("click", () => {
-                console.log("executar função flipCard clicando nas cartas")
+                console.log("event cartaSelector")
+                if (cartaSelector.className === "back-card") {
+                    
+                    cartaSelector.classList.remove("back-card")
+                    cartaSelector.classList.toggle("card-no-show")
+
+                    cardFrontID.classList.toggle("card-show")
+                    cardFrontID.classList.toggle("card-no-show")
+
+                    
+
+
+                    
+                }})
+
+
+                
 
 
 
-            })
+            }
         }  
     }
 
@@ -77,7 +96,7 @@ class lvl1 {
 
   
 
-}
+
 
 
 newGame = new lvl1()
