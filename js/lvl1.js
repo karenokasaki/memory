@@ -18,11 +18,15 @@ class lvl1 {
         ]
 
         
+
+        
     } 
     shuffleCards() {
         let deck = this.deck.sort(() => Math.random() - 0.5)
         return deck
     }
+
+
 
     printCards() {
         let board = document.getElementById("board")
@@ -32,7 +36,7 @@ class lvl1 {
             let cardFront = document.createElement("img")
 
             cardBack.classList.add("back-card")
-            cardFront.classList.add("card")
+            cardFront.classList.add("card-no-show")
 
             cardFront.id = ("card"+[i])
             cardFront.src = this.deck[i][1]
@@ -50,19 +54,28 @@ class lvl1 {
         lifes.innerText = this.lifes
     }
 
-    addEvent() {
-        
-        let carta; 
+    flipCard() { //essa função está estruturada direito? eu acho que juntei muita coisa em um lugar só
+        let cartaBack; 
         for (let i = 1 ; i <= 8 ; i++) {
-            carta = `#board > div:nth-child(${i}) > img.back-card`
-            console.log(carta)
-            let cartaSelector = document.querySelector(carta)
+            cartaBack = `#board > div:nth-child(${i}) > img.back-card`
+            console.log(cartaBack)
+            let cartaSelector = document.querySelector(cartaBack)
 
             cartaSelector.addEventListener("click", () => {
-                console.log("clicando nas cartas")
+                console.log("executar função flipCard clicando nas cartas")
+
+
+
             })
         }  
     }
+
+   
+
+
+
+
+  
 
 }
 
@@ -72,7 +85,8 @@ newGame = new lvl1()
 newGame.shuffleCards()
 newGame.setLifes()
 newGame.printCards()
-newGame.addEvent()
+
+newGame.flipCard()
 
 
 

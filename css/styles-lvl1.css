@@ -142,7 +142,10 @@
 }
 
 
-.card {
+.card-show {
+    visibility: hidden;
+}
+.card-no-show {
     visibility: hidden;
 }
 
