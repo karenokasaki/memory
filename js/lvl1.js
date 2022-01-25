@@ -55,33 +55,44 @@ class lvl1 {
     }
 
     flipCard() { //essa função está estruturada direito? eu acho que juntei muita coisa em um lugar só
-        let cartaBack; 
+        let cartaBack = ''
+        let cardsToMatch = []
+        
         for (let i = 1 ; i <= 8 ; i++) {
             cartaBack = `#board > div:nth-child(${i}) > img.back-card`
-            console.log(cartaBack)
+            
             let cartaSelector = document.querySelector(cartaBack)
-
             let cardNumberId = `card${i-1}`
             let cardFrontID = document.getElementById(cardNumberId)
             
-            cartaSelector.addEventListener("click", () => {
-                console.log("event cartaSelector")
-                if (cartaSelector.className === "back-card") {
-                    
-                    cartaSelector.classList.remove("back-card")
+            cartaSelector.addEventListener("click", () => { //abrir e fechar carta
+                const timerId = setTimeout(() => {
+                    cartaSelector.classList.toggle("back-card")
                     cartaSelector.classList.toggle("card-no-show")
-
+                    //cardFrontID.classList.toggle("card-show")
+                    cardFrontID.classList.toggle("card-no-show")
+                    
+                    cardsToMatch.pop()
+                }, 700);
+                
+                if (cardsToMatch.length < 2 && cartaSelector.className === "back-card") { 
+                    cardsToMatch.push(cardFrontID.src)
+                    cartaSelector.classList.toggle("back-card")
+                    cartaSelector.classList.toggle("card-no-show")
                     cardFrontID.classList.toggle("card-show")
                     cardFrontID.classList.toggle("card-no-show")
-
                     
-
-
                     
-                }})
-
-
+                    }
                 
+                if (cardsToMatch[0] === cardsToMatch[1]) { //altera o toggle pro cara que eu quero
+                    console.log(cardsToMatch)
+                }
+               
+
+                    
+ 
+                })
 
 
 
