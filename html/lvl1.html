@@ -10,21 +10,39 @@
     <title>Memory Game - Level 1</title>
 </head>
 <body>
-    <div class="lvl1">
+    <div id="lvl1" class="lvl1">
         <div class="lvl1-header">
             <div class="lvl1-lifes">
-                Lifes:<span>10</span>
+                Lifes: <span id="lifes"></span>
             </div>
-            <div class="lvl1-lvl">
-                LEVEL 1
+            <div class="lvl1-lvl">LEVEL 1</div>
+        </div>
+
+        <div id="board" class="board">
+
+
+        </div>
+
+        <div class="loose">
+            Você perdeu... <br>
+            Quer tentar novamente?
+            <div class="start-txt">
+                <button class="start-btn start-txt"><a class="start-txt" href="../index.html">TRY AGAIN</button></a>
             </div>
         </div>
 
-        <div class="board">
+        <div class="win">
+            PARABÉNS!! <br>
+            Vamos para o próximo nível
+            <div class="start-txt">
+                <button class="start-btn start-txt"><a class="start-txt" href="../index.html">NEXT</button></a>
+            </div>
         </div>
+
+
 
     </div>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/lvl1.js"></script>
 </body>
 </html>
