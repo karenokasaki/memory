@@ -10,52 +10,26 @@
     <title>Memory Game - Level 3</title>
 </head>
 <body>
-    <div class="lvl1">
+    <div id="lvl1" class="lvl1">
         <div class="lvl1-header">
             <div class="lvl1-lifes">
-                Lifes:<span>10</span>
+                Vidas: <span id="lifes"></span>
             </div>
-            <div class="lvl1-lvl">
-                LEVEL 3
-            </div>
+            <div class="lvl1-lvl">LEVEL 3</div>
         </div>
 
-        <div class="board">
-            <div><img src="../img/amigos.svg" alt="" srcset=""></div>
-            <div><img src="../img/caminho.svg" alt="" srcset=""></div>
-            <div><img src="../img/amigos.svg" alt="" srcset=""></div>
-            <div><img src="../img/criar.svg" alt="" srcset=""></div>
-            <div><img src="../img/desafio.svg" alt="" srcset=""></div>
-            <div><img src="../img/caminho.svg" alt="" srcset=""></div>
-            <div><img src="../img/projetar.svg" alt="" srcset=""></div>
-            <div><img src="../img/criar.svg" alt="" srcset=""></div>
-            <div><img src="../img/harmonia.svg" alt="" srcset=""></div>
-            <div><img src="../img/desafio.svg" alt="" srcset=""></div>
-            <div><img src="../img/harmonia.svg" alt="" srcset=""></div>
-            <div><img src="../img/poder.svg" alt="" srcset=""></div>
-            <div><img src="../img/refletir.svg" alt="" srcset=""></div>
-            <div><img src="../img/poder.svg" alt="" srcset=""></div>
-            <div><img src="../img/projetar.svg" alt="" srcset=""></div>
-            <div><img src="../img/refletir.svg" alt="" srcset=""></div>
-            <div><img src="../img/harmonia.svg" alt="" srcset=""></div>
-            <div><img src="../img/desafio.svg" alt="" srcset=""></div>
-            <div><img src="../img/harmonia.svg" alt="" srcset=""></div>
-            <div><img src="../img/poder.svg" alt="" srcset=""></div>
-            <div><img src="../img/refletir.svg" alt="" srcset=""></div>
-            <div><img src="../img/poder.svg" alt="" srcset=""></div>
-            <div><img src="../img/projetar.svg" alt="" srcset=""></div>
-            <div><img src="../img/refletir.svg" alt="" srcset=""></div>
-        </div>
+        <div id="board" class="board"> </div>
 
-        <div class="loose">
-            Você perdeu... <br>
-            Quer tentar novamente?
+        <div class="loose" id="loose">
+            Você chegou tão longe... que pena! <br>
+            Não desista agora! <br>
+            Vamos tentar de novo?
             <div class="start-txt">
-                <button class="start-btn start-txt"><a class="start-txt" href="../index.html">TRY AGAIN</button></a>
+                <button class="start-btn start-txt"><a class="start-txt" href="../html/lvl3.html">TRY AGAIN</button></a>
             </div>
         </div>
 
-        <div class="win">
+        <div class="win" id="win">
             PARABÉNS!! <br>
             Você tem uma ótima memória!
             <div class="start-txt">
@@ -64,6 +38,6 @@
         </div>
     </div>
 
-    <script src="./js/app.js"></script>
+    <script src="../js/lvl3.js"></script>
 </body>
 </html>
