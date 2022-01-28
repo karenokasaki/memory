@@ -1,5 +1,5 @@
 # memory
 game of memory
 <<<<<<< HEAD
-[link!](https://karenokasaki.github.io/memory/)
+[link!](https://karenokasaki.github.io/memory/index.html)
 
