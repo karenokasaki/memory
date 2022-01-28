@@ -18,6 +18,6 @@ Turma: WebDevelopmentFullTime JAN2022!
 
 ## Links
 
+[Link para a Apresentação](https://karenokasaki.github.io/memory/index.html) - Apresentação do Projeto - Jogo da memória!
 
-[Link para a Apresentação do Projeto](https://karenokasaki.github.io/memory/index.html)
 [Link para Jogar!](https://karenokasaki.github.io/memory/index.html) - Boa sorte!
