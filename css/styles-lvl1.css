@@ -23,7 +23,15 @@ html {
   top: 0px;
 
   background: #f0d12d;
+  box-shadow:
+  0px 2.3px 0px rgba(0, 0, 0, 0.022),
+  0px 3.4px 0px rgba(0, 0, 0, 0.031),
+  0px 4.4px 0px rgba(0, 0, 0, 0.039),
+  0px 5.8px 0px rgba(0, 0, 0, 0.048),
+  0px 10px 0px rgba(0, 0, 0, 0.07)
+;
 }
+
 
 .lvl1-lifes {
   position: absolute;
@@ -31,7 +39,6 @@ html {
   height: 103px;
   left: 0px;
   top: 0px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -40,6 +47,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #cc9c19;
 
   color: #cc9c19;
 }
@@ -50,7 +58,6 @@ html {
   height: 103px;
   left: 640px;
   top: 0px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -59,6 +66,8 @@ html {
   display: flex;
   align-items: center;
   text-align: center;
+  color: #ffffff;
+  justify-content: space-evenly;
 
   color: #ffffff;
 }
@@ -163,4 +172,24 @@ html {
 
 .matched {
   display: none;
+}
+
+#board > div{
+  border-radius: 15px;
+  box-shadow:
+  2.3px 2.3px 0px rgba(0, 0, 0, 0.022),
+  3.4px 3.4px 0px rgba(0, 0, 0, 0.031),
+  4.4px 4.4px 0px rgba(0, 0, 0, 0.039),
+  5.8px 5.8px 0px rgba(0, 0, 0, 0.048),
+  10px 10px 0px rgba(0, 0, 0, 0.07)
+;
+} 
+
+.gif {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  height: 103px;
 }

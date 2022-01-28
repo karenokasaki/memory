@@ -1,38 +1,42 @@
 .home-page {
-    position: relative;
-    width: 1280px;
-    height: 720px;
+  position: relative;
+  width: 1280px;
+  height: 620px;
 
-    background: #e3dcdc;
+  background: #f1eeee;
 }
 
 .title-home-page {
-    position: absolute;
-    width: 1280px;
-    height: 148px;
-    left: 0px;
-    top: 0px;
-    background: #ECCD2D;
+  position: absolute;
+  width: 1280px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  background: #eccd2d;
+  box-shadow:  -11px 11px 0px #b1b1b1,
+                 11px -11px 0px #ffffff;
 }
 
 .game-name-text {
-    position: absolute;
-    width: 1280px;
-    height: 148px;
-    left: 0px;
-    top: 0px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 71.1111px;
-    line-height: 83px;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
-    justify-content: space-around;
-    
-    color: #FFFFFF;
+  position: absolute;
+  width: 1280px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 71.1111px;
+  line-height: 83px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: space-around;
+
+  color: #ffffff;
+  box-shadow: 0px 11px 0px rgba(0, 0, 0, 0.032),
+    0px 18.1px 0px rgba(0, 0, 0, 0.048), 0px 25px 0px rgba(0, 0, 0, 0.08);
 }
 
 .how-to-play {
@@ -40,29 +44,33 @@
     width: 753.76px;
     height: 162.02px;
     left: 245px;
-    top: 252px;
+    top: 187px;
+    background: #ffffff;
+    border-radius: 40px;
+    border-radius: 37px;
+    background: #e0e0e0;
+    box-shadow:  -11px 11px 0px #888888,
+                 11px -11px 0px #ffffff;
 
-    background: #FFFFFF;
-    border-radius: 39.625px;
 }
 
 .how-to-text {
-    width: 753.76px;
-    height: 162.02px;
-    left: 245px;
-    top: 252px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 26.4167px;
-    line-height: 31px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-
-    color: rgba(0, 0, 0, 0.4);
+  width: 753.76px;
+  height: 162.02px;
+  left: 245px;
+  top: 252px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26.4167px;
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  color: rgba(0, 0, 0, 0.4);
+  border-radius: 40px;
+  
 }
 
 .start-btn {
@@ -70,31 +78,33 @@
     width: 383px;
     height: 123.77px;
     left: 430px;
-    top: 518px;
+    top: 431px;
     border: none;
 
-    background: #48E445;
-    border-radius: 30.9425px;
+  background: #48e445;
+
+  border-radius: 15px;
+  box-shadow:  -11px 11px 0px #b1b1b1,
+                 11px -11px 0px #ffffff;
 }
 
 .start-txt {
-    position: absolute;
-    width: 383px;
-    height: 124px;
-    left: 0px;
-    top: 0px;
+  position: absolute;
+  width: 383px;
+  height: 124px;
+  left: 0px;
+  top: 0px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 55.009px;
-    line-height: 64px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    text-decoration: none;
-    color: #497E2F;
-
-
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55.009px;
+  line-height: 64px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #497e2f;
+  border-color: white;
 }
